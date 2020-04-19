@@ -2,8 +2,9 @@
   "name": "trainingjs",
   "version": "0.1.0",
   "description": "Data structures and algorithms library for JavaScript.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "parcel ./demo/index.html --global trainingjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/paluka/training-js/issues"
   },
-  "homepage": "https://github.com/paluka/training-js#readme"
+  "homepage": "https://github.com/paluka/training-js#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
 }
