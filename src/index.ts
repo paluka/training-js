@@ -2,7 +2,8 @@ import depthFirstSearch from './depthFirstSearch';
 import breathFirstSearch from './breathFirstSearch';
 import Stack from './stack';
 import Node from './node';
-import { NodeT } from './types';
+import { NodeT, TrieT } from './types';
+import Trie from './trie';
 
 const trainingjs = {
   dfs: function (root: NodeT, searchValue: number): boolean {
@@ -19,6 +20,10 @@ const trainingjs = {
 
   createNode: function (val: number): NodeT {
     return new Node(val);
+  },
+
+  createTrie: function (): TrieT {
+    return new Trie();
   },
 };
 

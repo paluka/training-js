@@ -9,20 +9,25 @@
   <body>
     <script>
       const tjs = trainingjs.default;
-      const arr = [];
-      const numNodes = 15;
+      // const arr = [];
+      // const numNodes = 15;
 
-      for (let i = 0; i < numNodes; i++) {
-        arr.push(tjs.createNode(i));
-      }
+      // for (let i = 0; i < numNodes; i++) {
+      //   arr.push(tjs.createNode(i));
+      // }
 
-      for (let i = 0; i < numNodes / 2; i++) {
-        arr[i].left = arr[2 * i + 1];
-        arr[i].right = arr[2 * i + 2];
-      }
+      // for (let i = 0; i < numNodes / 2; i++) {
+      //   arr[i].left = arr[2 * i + 1];
+      //   arr[i].right = arr[2 * i + 2];
+      // }
 
-      const foundNodeFlag = tjs.dfs(arr[0], 15);
-      console.log(foundNodeFlag);
+      // const foundNodeFlag = tjs.dfs(arr[0], 5);
+      // console.log(foundNodeFlag);
+
+      const trie = tjs.createTrie();
+      trie.insert('cody');
+      trie.insert('coby');
+      console.log(trie.search('cody'));
     </script>
   </body>
 </html>
