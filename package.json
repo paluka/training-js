@@ -4,8 +4,7 @@
   "description": "Data structures and algorithms library for JavaScript.",
   "main": "src/index.js",
   "scripts": {
-    "start": "parcel ./demo/index.html --global trainingjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./demo/index.html --global trainingjs"
   },
   "repository": {
     "type": "git",
